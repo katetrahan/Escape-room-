@@ -5,8 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
-  width: 1200px;
-  font-family: sans-serif;
+  /*width: 1200px;*/
+  font-family: monospace;
 
 }
 
@@ -17,6 +17,12 @@ h1 {
   font-weight: bold;
 }
 
+.instructionsTitle {
+  text align: center;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
 body {
   padding: 20px;
   margin: 10px;
@@ -24,21 +30,53 @@ body {
   background-color:#7D5B52;
 }
 
+#introText {
+  border: 10px solid #52343A;
+  padding:15px;
+  margin: 10px;
+  color: #C29982;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+img {
+  width: 100%;
+}
+
+#introColumn {
+  /*border: 1px solid #000000;*/
+}
+
+#itemsColumn {
+  text-align: center;
+  background-color: #E5D8C8;
+  border: 12px solid #52343A;
+  height: 805px;
+}
+
+#instructionsColumn {
+  background-color: #E5D8C8;
+  border: 10px solid #52343A;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+li {
+  text-align:center;
+  list-style: none;
+}
+
 #userReview {
   font-weight: bold;
   color: #878d96;
 }
 
-#introText {
-  border: black;
+blockquote {
+  color: #332031
 }
 
-.well {
-  width: 1200px;
-  background-color: #E5D8C8;
-}
-
-li {
-  text-align: center;
-  list-style: none;
+blockquote footer {
+  color: #332031;
+  font-size: 18pt;
 }
