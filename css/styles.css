@@ -33,7 +33,6 @@ body {
 #introText {
   border: 10px solid #52343A;
   padding:15px;
-  margin: 10px;
   color: #C29982;
   font-weight: bold;
   font-size: 20px;
@@ -42,6 +41,7 @@ body {
 
 img {
   width: 100%;
+  padding-top: 10px;
 }
 
 #introColumn {
@@ -52,7 +52,8 @@ img {
   text-align: center;
   background-color: #E5D8C8;
   border: 12px solid #52343A;
-  height: 805px;
+  height: 640px;
+
 }
 
 #instructionsColumn {
