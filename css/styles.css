@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   height: 270px;
   /*width: 1200px;*/
-  font-family: sans-serif;
+  font-family: monospace;
 
 }
 
@@ -20,7 +20,7 @@ h1 {
 .instructionsTitle {
   text align: center;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 25pt;
 }
 
 body {
@@ -32,10 +32,12 @@ body {
 
 #introText {
   border: 10px solid #52343A;
-  padding:10px;
+  padding:15px;
+  margin: 10px;
   color: #C29982;
   font-weight: bold;
   font-size: 20px;
+
 }
 
 img {
@@ -49,13 +51,15 @@ img {
 #itemsColumn {
   text-align: center;
   background-color: #E5D8C8;
-  border: 10px solid #52343A;
+  border: 12px solid #52343A;
+  height: 805px;
 }
 
 #instructionsColumn {
-  width: 1000px;
   background-color: #E5D8C8;
   border: 10px solid #52343A;
+  font-family: monospace;
+  font-size: 20px;
 }
 
 li {
@@ -66,4 +70,13 @@ li {
 #userReview {
   font-weight: bold;
   color: #878d96;
+}
+
+blockquote {
+  color: #332031
+}
+
+blockquote footer {
+  color: #332031;
+  font-size: 18pt;
 }
