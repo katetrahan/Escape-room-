@@ -72,6 +72,7 @@ li {
 #userReview {
   font-weight: bold;
   color: #878d96;
+  padding: 10px;
 }
 
 blockquote {
@@ -81,4 +82,8 @@ blockquote {
 blockquote footer {
   color: #332031;
   font-size: 18pt;
+}
+
+.buttonborder {
+  margin: 10px;
 }
