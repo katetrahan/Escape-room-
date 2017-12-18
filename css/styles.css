@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
+  width: 1200px;
   font-family: sans-serif;
 
 }
@@ -20,6 +21,7 @@ body {
   padding: 20px;
   margin: 10px;
   border: 10px;
+  background-color:#7D5B52;
 }
 
 #userReview {
@@ -29,4 +31,14 @@ body {
 
 #introText {
   border: black;
+}
+
+.well {
+  width: 1200px;
+  background-color: #E5D8C8;
+}
+
+li {
+  text-align: center;
+  list-style: none;
 }
