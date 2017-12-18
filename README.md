@@ -11,11 +11,7 @@ _This webpage is meant to collaborate with classmates and create a webpage using
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| it can count up to the provided number | 2 | 1, 2 |
-| to does not count anything that's not a number | p | error |
-| places a value equal to a specific result | 0 | "Beep!" |
-| it returns a message to numbers divisible by three | 6 | "I'm sorry Dave. I'm afraid I can't do that!" |
-| cannot count higher than 30 | 40 | error, I cant count that high |
+| captures result when item is selected | "apple graphic" | "apple graphic" 
 
 
 ## Setup/Installation Requirements
