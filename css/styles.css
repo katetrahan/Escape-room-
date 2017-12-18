@@ -5,7 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
-  width: 1200px;
+  /*width: 1200px;*/
   font-family: sans-serif;
 
 }
@@ -17,6 +17,12 @@ h1 {
   font-weight: bold;
 }
 
+.instructionsTitle {
+  text align: center;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
 body {
   padding: 20px;
   margin: 10px;
@@ -24,21 +30,40 @@ body {
   background-color:#7D5B52;
 }
 
-#userReview {
-  font-weight: bold;
-  color: #878d96;
-}
-
 #introText {
-  border: black;
+  border: 10px solid #52343A;
+  padding:10px;
+  color: #C29982;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.well {
-  width: 1200px;
+img {
+  width: 100%;
+}
+
+#introColumn {
+  /*border: 1px solid #000000;*/
+}
+
+#itemsColumn {
+  text-align: center;
   background-color: #E5D8C8;
+  border: 10px solid #52343A;
+}
+
+#instructionsColumn {
+  width: 1000px;
+  background-color: #E5D8C8;
+  border: 10px solid #52343A;
 }
 
 li {
-  text-align: center;
+  text-align:center;
   list-style: none;
+}
+
+#userReview {
+  font-weight: bold;
+  color: #878d96;
 }
