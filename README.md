@@ -11,7 +11,7 @@ _This webpage is meant to collaborate with classmates and create a webpage using
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| captures result when item is selected | "apple graphic" | "apple graphic" 
+| captures result when item is selected | "apple graphic" | "apple graphic"
 
 
 ## Setup/Installation Requirements
