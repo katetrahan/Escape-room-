@@ -7,12 +7,12 @@
   height: 270px;
   /*width: 1200px;*/
   font-family: monospace;
-
+  font-size: 35px;
 }
 
-h1 {
+.jumbotron h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 120px;
   font-style: normal;
   font-weight: bold;
 }
@@ -30,13 +30,19 @@ body {
   background-color:#7D5B52;
 }
 
+#itemList {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: monospace;
+}
+
 #introText {
   border: 10px solid #52343A;
   padding:15px;
   color: #C29982;
   font-weight: bold;
   font-size: 20px;
-
 }
 
 img {
@@ -44,16 +50,11 @@ img {
   padding-top: 10px;
 }
 
-#introColumn {
-  /*border: 1px solid #000000;*/
-}
-
 #itemsColumn {
   text-align: center;
   background-color: #E5D8C8;
   border: 12px solid #52343A;
   height: 640px;
-
 }
 
 #instructionsColumn {
