@@ -1,17 +1,22 @@
-.jumbotron {
+.header {
   background-image: url("https://img.grouponcdn.com/deal/2HwR6FiNzyux2cfzobXgEgwamzjY/2H-2000x1200/v1/c700x420.jpg");
   color: white;
   background-position: 20% 70%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
-  /*width: 1200px;*/
   font-family: monospace;
   font-size: 35px;
+  text-shadow: 4px 4px #000;
+  text-align: center;
+}
+.container {
 }
 
-.jumbotron h1 {
+.header h1 {
   text-align: center;
+  position: relative;
+  top: 30px;
   font-size: 120px;
   font-style: normal;
   font-weight: bold;
@@ -27,27 +32,65 @@ body {
   padding: 20px;
   margin: 10px;
   border: 10px;
-  background-color:#7D5B52;
+  background-color:#292929;
 }
 
-#itemList {
+/*#itemList {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
   font-family: monospace;
-}
+}*/
 
 #introText {
-  border: 10px solid #52343A;
-  padding:15px;
+  padding: 15px;
   color: #C29982;
   font-weight: bold;
   font-size: 20px;
 }
 
-img {
+#room1 {
   width: 100%;
-  padding-top: 10px;
+  background-color:#7D5B52;
+}
+
+.roomarea {
+  /*margin-top: 15px;*/
+  border: 10px solid #52343A;
+  background-color: #F2F2F2;
+  margin-bottom: 20px;
+}
+#itemsColumn {
+  text-align: center;
+  height: 100%;
+}
+.col-md-2 {
+  padding: 0;
+  margin: 0;
+
+  height: 100%;
+}
+.col-md-10 {
+  padding: 0;
+  margin: 0;
+}
+.objects {
+  height: 0px;
+}
+.door {
+  width: 125px;
+  height: 215px;
+  position: relative;
+  top: -460px;
+  left: 730px;
+}
+.door:hover {
+  background-color: #F2F2F2;
+  opacity: .4;
+}
+.card-img-top {
+  width: 100%;
+  margin-top: 15px;
 }
 
 #key1 {
@@ -63,16 +106,9 @@ img {
 }
 
 
-#itemsColumn {
-  text-align: center;
-  background-color: #E5D8C8;
-  border: 12px solid #52343A;
-  height: 640px;
-}
 
 #instructionsColumn {
-  background-color: #E5D8C8;
-  border: 10px solid #52343A;
+  /*margin-top: -18px;*/
   font-family: monospace;
   font-size: 20px;
 }
@@ -89,14 +125,16 @@ li {
 }
 
 blockquote {
-  color: #332031
+  color: #F2F2F2;
 }
 
 blockquote footer {
-  color: #332031;
+  color: #F2F2F2;
   font-size: 18pt;
 }
-
+.text-center {
+  color: #F2F2F2;
+}
 .buttonborder {
   margin: 10px;
 }

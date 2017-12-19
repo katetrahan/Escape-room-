@@ -12,7 +12,7 @@ Items.prototype.checkItems=function(){
   if(this.items.toString().match(/(?=.*key)/)){
     alert("Proceed!")
   } else {
-    alert("It won't budge, it is locked")
+    alert("It won't budge, it is locked!")
   }
 }
 
