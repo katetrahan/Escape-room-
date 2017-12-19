@@ -18,9 +18,15 @@ Items.prototype.checkItems=function(){
 
 $(document).ready(function(){
   var itemArray = [];
+  $("#key1").click(function(){
+    var key = "key"
+    $("#key1").fadeOut();
+    itemArray.push(key);
+    console.log(itemArray);
+  });
+  var items = new Items(itemArray);
 
 
-
-  Door.onClick = checkItems();
+  Door.onClick = items.checkItems();
 
 });
