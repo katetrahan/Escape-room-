@@ -23,6 +23,7 @@ $(document).ready(function(){
     $("#key1").fadeOut();
     itemArray.push(key);
     console.log(itemArray);
+    $("#inventory").append("<li>Key</li>");
   });
   var items = new Items(itemArray);
 
