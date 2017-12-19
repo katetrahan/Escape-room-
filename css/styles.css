@@ -50,6 +50,19 @@ img {
   padding-top: 10px;
 }
 
+#key1 {
+  width: 53px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  top: -235px;
+  left: 360px;
+}
+#key1:hover {
+  opacity: 0.5;
+}
+
+
 #itemsColumn {
   text-align: center;
   background-color: #E5D8C8;
