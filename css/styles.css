@@ -45,9 +45,16 @@ body {
   font-size: 20px;
 }
 
-img {
+#room1 {
   width: 100%;
-  padding-top: 10px;
+  margin-top: 15px;
+  border: 10px solid #52343A;
+  background-color:#7D5B52;
+}
+
+.card-img-top {
+  width: 100%;
+  margin-top: 15px;
 }
 
 #key1 {
@@ -67,10 +74,12 @@ img {
   text-align: center;
   background-color: #E5D8C8;
   border: 12px solid #52343A;
-  height: 640px;
+  height: 635px;
+  margin-top: 15px;
 }
 
 #instructionsColumn {
+  margin-top: -18px;
   background-color: #E5D8C8;
   border: 10px solid #52343A;
   font-family: monospace;
