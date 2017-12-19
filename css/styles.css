@@ -77,14 +77,14 @@ body {
 .objects {
   height: 0px;
 }
-.door {
+#door {
   width: 125px;
   height: 215px;
   position: relative;
   top: -460px;
   left: 730px;
 }
-.door:hover {
+#door:hover {
   background-color: #F2F2F2;
   opacity: .4;
 }
