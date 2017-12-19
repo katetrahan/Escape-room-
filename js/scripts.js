@@ -18,7 +18,9 @@ Items.prototype.checkItems=function(){
 
 $(document).ready(function(){
 
-
+  $("#key1").click(function(){
+    $("#key1").fadeOut();
+  });
 
   Door.onClick = checkItems();
 
