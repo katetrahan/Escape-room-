@@ -10,9 +10,9 @@ function Door(){
 
 Items.prototype.checkItems=function(){
   if(this.items.toString().match(/(?=.*key)/)){
-    alert("Proceed!")
+    document.getElementById('room1').src= "img/room1_opendoor.png";
   } else {
-    alert("It won't budge, it is locked!")
+    alert("It won't budge, it is locked!" )
   }
 }
 
@@ -26,10 +26,8 @@ $(document).ready(function(){
   });
   var items = new Items(itemArray);
 
-  $("#key1").click(function(){
-    $("#key1").fadeOut();
+  $("#door").click(function(){
+    items.checkItems();
   });
-
-  Door.onClick = items.checkItems();
 
 });
