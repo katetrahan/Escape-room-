@@ -202,3 +202,25 @@ blockquote footer {
 #r2_book:hover {
   opacity: 0.5;
 }
+#r2_specs {
+  width: 45px;
+  height: 15px;
+  position: relative;
+  z-index: 1;
+  top: -395px;
+  left: 385px;
+}
+#r2_specs:hover {
+  opacity: 0.5;
+}
+#r2_saturn {
+  width: 45px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  top: -675px;
+  left: 520px;
+}
+#r2_saturn:hover {
+  opacity: 0.5;
+
