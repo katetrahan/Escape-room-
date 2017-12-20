@@ -95,6 +95,17 @@ body {
   opacity: 0.5;
 }
 
+#level3Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -949px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 .roomarea {
   /*margin-top: 15px;*/
   border: 10px solid #52343A;

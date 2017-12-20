@@ -34,7 +34,7 @@ Items.prototype.checkItemsLevelTwo=function(){
 Items.prototype.checkItemsLevelThree=function(){
   if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
     document.getElementById("bunny").onclick=function(){
-      location.href = "roomtwo.html";
+      location.href = "roomfour.html";
     }
   } else {
     alert("Can't Travel to Saturn!")
@@ -123,13 +123,13 @@ $(document).ready(function(){
     $("#inventory").append("<li>Pineapple</li>");
   });
 
-  // $("#r2-saturn").click(function(){ // click on bunny to get out
-  //  items.checkItemsLevelThree ();
-  //  });
+    $("#bunny").click(function(){ // click on bunny to get out
+      items.checkItemsLevelThree ();
+  });
 
-//   $("#thirdLevelButton").click(function(){
-//     $("#level3Img").fadeOut();
-//
+    $("#thirdLevelButton").click(function(){
+    $("#level3Img").fadeOut();
+  });
 //
 //
  });
