@@ -30,6 +30,17 @@ Items.prototype.checkItemsLevelTwo=function(){
   }
 }
 
+//function to get to level (4)
+Items.prototype.checkItemsLevelThree=function(){
+  if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
+    document.getElementById("bunny").onclick=function(){
+      location.href = "roomtwo.html";
+    }
+  } else {
+    alert("Can't Travel to Saturn!")
+  }
+}
+
 //user interface
 //function to get to level 2
 $(document).ready(function(){
@@ -63,9 +74,9 @@ $(document).ready(function(){
     $("#inventory").append("<li>Book</li>");
   });
 
-  $("#r2-saturn").click(function(){
-    items.checkItemsLevelOne();
-  });
+  // $("#r2-saturn").click(function(){
+  //  items.checkItemsLevelTwo();
+  //  });
 
   $("#r2_specs").click(function(){
     var specs = "specs"
@@ -84,7 +95,41 @@ $(document).ready(function(){
   $("#secondLevelButton").click(function(){
     $("#level2Img").fadeOut();
   });
-});
+
+  $("#r3_cactus").click(function(){
+    var cactus = "cactus"
+    $("#r3_cactus").css("opacity", "0");
+    itemArray.push(cactus);
+    console.log(itemArray);
+    $("#inventory").append("<li>Cactus</li>");
+  });
+
+  $("#r3_pizza").click(function(){
+    var pizza = "pizza"
+    $("#r3_pizza").css("opacity", "0");
+    itemArray.push(pizza);
+    console.log(itemArray);
+    $("#inventory").append("<li>Pizza</li>");
+  });
+
+  $("#r3_pineapple").click(function(){
+    var pineapple = "pineapple"
+    $("#r3_pineapple").css("opacity", "0");
+    itemArray.push(pineapple);
+    console.log(itemArray);
+    $("#inventory").append("<li>Pineapple</li>");
+  });
+
+  // $("#r2-saturn").click(function(){ // click on bunny to get out
+  //  items.checkItemsLevelThree ();
+  //  });
+
+//   $("#thirdLevelButton").click(function(){
+//     $("#level3Img").fadeOut();
+//
+//
+//
+ });
 
 
   // $("#thirdLevelButton").click(function(){
