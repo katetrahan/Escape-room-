@@ -62,6 +62,10 @@ $(document).ready(function(){
     $("#level1Img").fadeOut();
   });
 
+  $("#skiplevel").click(function(){
+    alert("Sneaky snake you can't skip a level!");
+  });
+
   //function to get to level 2
 
 // $(document).ready(function(){
