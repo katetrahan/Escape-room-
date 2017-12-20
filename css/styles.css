@@ -182,7 +182,7 @@ blockquote footer {
   height: 71px;
   position: relative;
   z-index: 1;
-  top: -345px;
+  top: -130px;
   left: 665px;
 }
 #r2_book:hover {
@@ -209,4 +209,3 @@ blockquote footer {
 }
 #r2_saturn:hover {
   opacity: 0.5;
-
