@@ -32,3 +32,15 @@
 #r3_pineapple:hover {
   opacity: 0.5;
 }
+#bunny {
+  width: 80px;
+  height: 110px;
+  position: relative;
+  top: -460px;
+  left: 348px;
+  z-index: 2;
+}
+#bunny:hover {
+  background-color: #F2F2F2;
+  opacity: .4;
+}

@@ -20,10 +20,21 @@ Items.prototype.checkItemsLevelOne=function(){
 }
 //function to get to level 3
 Items.prototype.checkItemsLevelTwo=function(){
-  if(this.items.toString().match(/(?=.*book)(?=.*glasses)/)){
-    document.getElementById('room2').src= "room2/saturn.png";
-    document.getElementById("saturn").onclick=function(){
+  if(this.items.toString().match(/(?=.*book)(?=.*specs)/)){
+    // document.getElementById('room2').src= "room2/saturn.png";
+    document.getElementById("r2_saturn").onclick=function(){
       location.href = "roomthree.html";
+    }
+  } else {
+    alert("Can't Travel to Saturn!")
+  }
+}
+
+//function to get to level (4)
+Items.prototype.checkItemsLevelThree=function(){
+  if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
+    document.getElementById("bunny").onclick=function(){
+      location.href = "roomtwo.html";
     }
   } else {
     alert("Can't Travel to Saturn!")
@@ -57,21 +68,68 @@ $(document).ready(function(){
 //   var itemArray = [];
   $("#r2_book").click(function(){
     var book = "book"
-    $("#r2_book").fadeOut();
+    $("#r2_book").css("opacity", "0");
     itemArray.push(book);
     console.log(itemArray);
     $("#inventory").append("<li>Book</li>");
   });
-  // var items = new Items(itemArray);
 
-  $("#r2-saturn").click(function(){
-    items.checkItemsLevelOne();
+  // $("#r2-saturn").click(function(){
+  //  items.checkItemsLevelTwo();
+  //  });
+
+  $("#r2_specs").click(function(){
+    var specs = "specs"
+    $("#r2_specs").css("opacity", "0");
+    itemArray.push(specs);
+    console.log(itemArray);
+    $("#inventory").append("<li>Bifocals</li>");
   });
+
+  $("#r2_saturn").click(function(){
+    items.checkItemsLevelTwo();
+
+  });
+
 
   $("#secondLevelButton").click(function(){
     $("#level2Img").fadeOut();
   });
-});
+
+  $("#r3_cactus").click(function(){
+    var cactus = "cactus"
+    $("#r3_cactus").css("opacity", "0");
+    itemArray.push(cactus);
+    console.log(itemArray);
+    $("#inventory").append("<li>Cactus</li>");
+  });
+
+  $("#r3_pizza").click(function(){
+    var pizza = "pizza"
+    $("#r3_pizza").css("opacity", "0");
+    itemArray.push(pizza);
+    console.log(itemArray);
+    $("#inventory").append("<li>Pizza</li>");
+  });
+
+  $("#r3_pineapple").click(function(){
+    var pineapple = "pineapple"
+    $("#r3_pineapple").css("opacity", "0");
+    itemArray.push(pineapple);
+    console.log(itemArray);
+    $("#inventory").append("<li>Pineapple</li>");
+  });
+
+  // $("#r2-saturn").click(function(){ // click on bunny to get out
+  //  items.checkItemsLevelThree ();
+  //  });
+
+//   $("#thirdLevelButton").click(function(){
+//     $("#level3Img").fadeOut();
+//
+//
+//
+ });
 
 
   // $("#thirdLevelButton").click(function(){

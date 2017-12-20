@@ -79,7 +79,7 @@ body {
   background-color:#7D5B52;
   position: relative;
   z-index: 3;
-  top: -705px;
+  top: -855px;
   left: 0px;
   opacity: 0.5;
 }
@@ -249,4 +249,3 @@ blockquote footer {
 #r2_saturn:hover {
   opacity: 0.5;
 }
-
