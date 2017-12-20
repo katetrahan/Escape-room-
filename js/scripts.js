@@ -11,10 +11,26 @@ function Door(){
 Items.prototype.checkItems=function(){
   if(this.items.toString().match(/(?=.*key)/)){
     document.getElementById('room1').src= "img/room1_opendoor.png";
+    document.getElementById("door").onclick=function(){
+      location.href = "roomtwo.html";
+    }
   } else {
     alert("It won't budge, it is locked!" )
   }
 }
+
+// Items.prototype.checkItems=function(){
+//   if(this.items.toString().match(/(?=.*)/)){
+//     document.getElementById('room1').src= "img/room1_opendoor.png";
+//     document.getElementById("door").onclick=function(){
+//       location.href = "roomtwo.html";
+//     }
+//   } else {
+//     alert("It won't budge, it is locked!" )
+//   }
+// }
+
+
 
 $(document).ready(function(){
   var itemArray = [];
@@ -29,6 +45,10 @@ $(document).ready(function(){
 
   $("#door").click(function(){
     items.checkItems();
+  });
+
+  $("#firstLevelButton").click(function(){
+    $("#level1Img").fadeOut();
   });
 
 });
