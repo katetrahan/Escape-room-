@@ -1,0 +1,34 @@
+#r3_cactus {
+  width: 102px;
+  height: 186px;
+  position: relative;
+  z-index: 1;
+  top: -615px;
+  left: 620px;
+}
+#r3_cactus:hover {
+  opacity: 0.5;
+}
+
+#r3_pizza {
+  width: 75px;
+  height: 95px;
+  position: relative;
+  z-index: 1;
+  top: -315px;
+  left: 690px;
+}
+#r3_pizza:hover {
+  opacity: 0.5;
+}
+#r3_pineapple {
+  width: 121px;
+  height: 146px;
+  position: relative;
+  z-index: 1;
+  top: -415px;
+  left: -48px;
+}
+#r3_pineapple:hover {
+  opacity: 0.5;
+}
