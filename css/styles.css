@@ -26,7 +26,7 @@
   width: 200px;
   float: left;
 }
-s
+
 .header h1 {
   text-align: center;
   position: relative;
@@ -88,11 +88,18 @@ body {
   width: 100%;
   height: 600px;
   background-color:#7D5B52;
-  position: relative;
-  z-index: 4;
-  top: -700px;
-  left: 0px;
+
+
   opacity: 0.5;
+}
+.levelannounce {
+  background-color: #000;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -724px;
+  left: 0px;
 }
 
 .roomarea {
