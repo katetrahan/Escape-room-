@@ -92,7 +92,6 @@ $(document).ready(function(){
 
   $("#r2_saturn").click(function(){
     items.checkItemsLevelTwo();
-
   });
 
 
