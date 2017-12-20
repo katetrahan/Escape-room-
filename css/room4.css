@@ -1,0 +1,14 @@
+#r4_circle {
+  width: 114px;
+  height: 116px;
+  position: relative;
+  z-index: 1;
+  top: -215px;
+  left: 435px;
+}
+#r4_circle:hover {
+  opacity: 0.5;
+}
+#room4 {
+  width: 100%;
+}
