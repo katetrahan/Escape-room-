@@ -41,6 +41,10 @@ Items.prototype.checkItemsLevelThree=function(){
   }
 }
 
+//function to get to level (5)
+
+
+
 //user interface
 //function to get to level 2
 $(document).ready(function(){
@@ -62,7 +66,7 @@ $(document).ready(function(){
     $("#level1Img").fadeOut();
   });
 
-  $("#skiplevel").click(function(){
+  $(".skiplevel").click(function(){
     alert("Sneaky snake you can't skip a level!");
   });
 
@@ -130,14 +134,22 @@ $(document).ready(function(){
     $("#thirdLevelButton").click(function(){
     $("#level3Img").fadeOut();
   });
-//
-//
+
+
+
+
+
+
+
+  $("#fourthLevelButton").click(function(){
+  $("#level4Img").fadeOut();
+
+ });
+
  });
 
 
-  // $("#thirdLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
+
   //
   // $("#fourthLevelButton").click(function(){
   //   $("#level3Img").fadeOut();
