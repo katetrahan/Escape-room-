@@ -28,6 +28,7 @@ Items.prototype.checkItemsLevelThree=function(){
     alert("Can't feed the bunny!")
   }
 }
+//function to get to level (5)
 Items.prototype.checkItemsLevelFour=function(){
   var image = document.getElementById('r4_circle');
   if(image.src.match("room4/circ_12.png")){
@@ -43,7 +44,6 @@ $(document).ready(function(){
     var key = "key"
     $("#key1").fadeOut();
     itemArray.push(key);
-    console.log(itemArray);
     $("#inventory").append("<li>Key</li>");
   });
 
@@ -65,7 +65,6 @@ $(document).ready(function(){
     var book = "book"
     $("#r2_book").css("opacity", "0");
     itemArray.push(book);
-    console.log(itemArray);
     $("#inventory").append("<li>Book</li>");
   });
 
@@ -73,7 +72,6 @@ $(document).ready(function(){
     var specs = "specs"
     $("#r2_specs").css("opacity", "0");
     itemArray.push(specs);
-    console.log(itemArray);
     $("#inventory").append("<li>Bifocals</li>");
   });
 
@@ -89,7 +87,6 @@ $(document).ready(function(){
     var cactus = "cactus"
     $("#r3_cactus").css("opacity", "0");
     itemArray.push(cactus);
-    console.log(itemArray);
     $("#inventory").append("<li>Cactus</li>");
   });
 
@@ -97,7 +94,6 @@ $(document).ready(function(){
     var pizza = "pizza"
     $("#r3_pizza").css("opacity", "0");
     itemArray.push(pizza);
-    console.log(itemArray);
     $("#inventory").append("<li>Pizza</li>");
   });
 
@@ -105,13 +101,11 @@ $(document).ready(function(){
     var pineapple = "pineapple"
     $("#r3_pineapple").css("opacity", "0");
     itemArray.push(pineapple);
-    console.log(itemArray);
     $("#inventory").append("<li>Pineapple</li>");
   });
 
   $("#bunny").click(function(){ // click on bunny to get out
     items.checkItemsLevelThree ();
-  });
 
   $("#thirdLevelButton").click(function(){
   $("#level3Img").fadeOut();
@@ -126,15 +120,23 @@ $(document).ready(function(){
    });
 
   var newClockPosition = 0;
-  $('#r4_circle').click(function(){
+    $('#r4_circle').click(function(){
     var clockPosition = ["room4/circ_6.png","room4/circ_9.png","room4/circ_12.png","room4/circ_3.png"];
-    document.getElementById('r4_circle').src= clockPosition[newClockPosition];
+  document.getElementById('r4_circle').src= clockPosition[newClockPosition];
     newClockPosition++;
     if(newClockPosition===4){
       newClockPosition = 0;
     }
   });
-  $("#r4_door").click(function(){ // click on bunny to get out
+
+  $("#r4_door").click(function(){ // click on door to get out
    items.checkItemsLevelFour ();
-  });
+   });
+
+  function blinker() {
+    $("#introText").fadeOut(500).fadeIn(500);
+  }
+
+  setInterval(blinker, 1300); //Runs every second
+
 });

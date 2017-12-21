@@ -1,12 +1,11 @@
 var itemArray = [];
 var health = 100;
 
-
 var flashWhite = function() {
   $('.back').css("background-color","#F2F2F2");
   setTimeout(function() {
     $('.back').css("background-color","#000000")},100);
-    if (itemArray.length ===  5) {
+    if (itemArray.length === 6) {
       $(".room5").fadeOut(1000);
       setTimeout(function() {
         location.href = "roomsix.html"
@@ -16,22 +15,22 @@ var flashWhite = function() {
     }
 }
 var flashRed = function() {
-    $('.back').css("background-color","#FF0000");
+  $('.back').css("background-color","#FF0000");
+  setTimeout(function() {
+  $('.back').css("background-color","#000000")},100);
+  health -= 10;
+  $('.progress-bar').css("width", health + "%");
+  if (health <= 0) {
+    console.log("you died");
+    $(".room5").fadeOut(1000);
     setTimeout(function() {
-      $('.back').css("background-color","#000000")},100);
-    health -= 10;
-    $('.progress-bar').css("width", health + "%");
-    if (health <= 0) {
-     console.log("you died");
-     $(".room5").fadeOut(1000);
-     setTimeout(function() {
-       $(".dead").fadeIn(500)},1500);
-       setTimeout(function() {
-       location.href = "index.html"},5000);
-    } else {}
+      $(".dead").fadeIn(500)},1500);
+    setTimeout(function() {
+      location.href = "index.html"},5000);
+  } else {}
 }
 var loseHealth = function(){
-    setInterval(function(){flashRed()},5000);
+  setInterval(function(){flashRed()},5000);
 }
 
 $(document).ready(function(){
@@ -68,6 +67,12 @@ $(document).ready(function(){
   });
   $('#key').one("click", function(){
     var key = "key";
+    itemArray.push(key);
+    console.log(itemArray);
+    flashWhite();
+  });
+  $('#circ').one("click", function(){
+    var key = "circ";
     itemArray.push(key);
     console.log(itemArray);
     flashWhite();
