@@ -162,8 +162,8 @@ body {
   z-index: 2;
 }
 #door:hover {
-  background-color: #F2F2F2;
-  opacity: .4;
+  /* background-color: #F2F2F2;
+  opacity: .4; */
 }
 
 .card-img-top {
@@ -243,9 +243,9 @@ blockquote footer {
   left: 360px;
 }
 
-#key1:hover {
+/* #key1:hover {
   opacity: 0.5;
-}
+} */
 
 /*Room 2*/
 #r2_book {
@@ -257,9 +257,9 @@ blockquote footer {
   left: 665px;
 }
 
-#r2_book:hover {
+/* #r2_book:hover {
   opacity: 0.5;
-}
+} */
 
 #r2_specs {
   width: 45px;
@@ -270,9 +270,9 @@ blockquote footer {
   left: 385px;
 }
 
-#r2_specs:hover {
+/* #r2_specs:hover {
   opacity: 0.5;
-}
+} */
 
 #r2_saturn {
   width: 45px;
@@ -283,9 +283,9 @@ blockquote footer {
   left: 520px;
 }
 
-#r2_saturn:hover {
+/* #r2_saturn:hover {
   opacity: 0.5;
-}
+} */
 
 /*#fontAlert {
   font-size: 20px;
