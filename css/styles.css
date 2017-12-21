@@ -1,17 +1,36 @@
-.jumbotron {
+.header {
   background-image: url("https://img.grouponcdn.com/deal/2HwR6FiNzyux2cfzobXgEgwamzjY/2H-2000x1200/v1/c700x420.jpg");
   color: white;
   background-position: 20% 70%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
-  /*width: 1200px;*/
   font-family: monospace;
   font-size: 35px;
+  text-shadow: 4px 4px #000;
+  text-align: center;
 }
 
-.jumbotron h1 {
+.boxed {
+  width:1180px;
+  height: 673px;
+  margin-left: -15px;
+}
+
+.box1 {
+  width: 980px;
+  float: left;
+}
+
+.box2 {
+  width: 200px;
+  float: left;
+}
+
+.header h1 {
   text-align: center;
+  position: relative;
+  top: 30px;
   font-size: 120px;
   font-style: normal;
   font-weight: bold;
@@ -20,66 +39,177 @@
 .instructionsTitle {
   text align: center;
   font-weight: bold;
-  font-size: 25pt;
+  font-size: 27pt;
+}
+
+#line {
+  border-top: 2px solid black;
+  font-weight: bold;
+  font-size: 27pt;
+
+  /*font-weight: bolder;*/
 }
 
 body {
   padding: 20px;
   margin: 10px;
   border: 10px;
-  background-color:#7D5B52;
+  background-color:#292929;
 }
 
-#itemList {
+/*#itemList {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
   font-family: monospace;
-}
+}*/
 
 #introText {
-  border: 10px solid #52343A;
-  padding:15px;
-  color: #C29982;
+  padding: 15px;
+  color: #292929;
   font-weight: bold;
   font-size: 20px;
 }
 
-img {
+#room1 {
   width: 100%;
-  padding-top: 10px;
+  background-color:#7D5B52;
 }
 
-#key1 {
-  width: 53px;
-  height: 20px;
-  position: relative;
-  z-index: 1;
-  top: -235px;
-  left: 360px;
+#room2 {
+  width: 100%;
+  background-color:#7D5B52;
 }
-#key1:hover {
+
+#level1Img {
+  width: 980px;
+  height: 653px;
+  background-color:#7D5B52;
+  position: relative;
+  z-index: 3;
+  top: -889px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+#level2Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -724px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+#level3Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -949px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+#level4Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -769px;
+  left: 0px;
   opacity: 0.5;
 }
 
 
+.roomarea {
+  /*margin-top: 15px;*/
+  border: 10px solid #52343A;
+  background-color: #F2F2F2;
+  margin-bottom: 20px;
+  width: 1200px;
+}
+
 #itemsColumn {
+  height: 100%;
+}
+
+.col-md-2 {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.col-md-10 {
+  padding: 0;
+  margin: 0;
+}
+
+.objects {
+  height: 0px;
+}
+
+#door {
+  width: 125px;
+  height: 215px;
+  position: relative;
+  top: -450px;
+  left: 748px;
+  z-index: 2;
+}
+#door:hover {
+  background-color: #F2F2F2;
+  opacity: .4;
+}
+
+.card-img-top {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.card {
+  margin: auto;
+}
+
+#itemsColumn {
+  padding: 15px;
   text-align: center;
-  background-color: #E5D8C8;
-  border: 12px solid #52343A;
-  height: 640px;
+}
+
+#itemsColumn h3 {
+  text-align: center;
+  border-bottom: 1px solid #292929;
+  font-size: 32px;
+}
+
+#inventory {
+  text-align: left;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  font-variant: small-caps;
+}
+
+#inventory li {
+  text-align: left;
+  list-style: none;
+  margin-left: -21px;
+  text-align: center;
 }
 
 #instructionsColumn {
-  background-color: #E5D8C8;
-  border: 10px solid #52343A;
-  font-family: monospace;
-  font-size: 20px;
+  /*margin-top: -18px;*/
+  font-family: sans-serif;
+  font-size: 24px;
+  /*text-align: center;*/
 }
 
-li {
-  text-align:center;
-  list-style: none;
+#instructionsColumn li {
+  /*list-style: none;*/
 }
 
 #userReview {
@@ -89,14 +219,76 @@ li {
 }
 
 blockquote {
-  color: #332031
+  color: #F2F2F2;
 }
 
 blockquote footer {
-  color: #332031;
+  color: #F2F2F2;
   font-size: 18pt;
 }
 
+.text-center {
+  color: #F2F2F2;
+}
 .buttonborder {
   margin: 10px;
 }
+/*Room 1 */
+#key1 {
+  width: 53px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  top: -455px;
+  left: 360px;
+}
+
+#key1:hover {
+  opacity: 0.5;
+}
+
+/*Room 2*/
+#r2_book {
+  width: 135px;
+  height: 71px;
+  position: relative;
+  z-index: 1;
+  top: -130px;
+  left: 665px;
+}
+
+#r2_book:hover {
+  opacity: 0.5;
+}
+
+#r2_specs {
+  width: 45px;
+  height: 15px;
+  position: relative;
+  z-index: 1;
+  top: -395px;
+  left: 385px;
+}
+
+#r2_specs:hover {
+  opacity: 0.5;
+}
+
+#r2_saturn {
+  width: 45px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  top: -675px;
+  left: 520px;
+}
+
+#r2_saturn:hover {
+  opacity: 0.5;
+}
+
+/*#fontAlert {
+  font-size: 20px;
+  font-style: oblique;
+  font-family: sans-serif;
+}*/

@@ -12,6 +12,7 @@ _This webpage is meant to collaborate with classmates and create a webpage using
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
 | captures result when item is selected | "apple graphic" | "apple graphic"
+| can return value| "hi" | "hi"|
 
 
 ## Setup/Installation Requirements
