@@ -6,9 +6,6 @@
   top: -215px;
   left: 435px;
 }
-#r4_circle:hover {
-  opacity: 0.5;
-}
 #room4 {
   width: 100%;
 }
@@ -18,8 +15,4 @@
   position: relative;
   top: -475px;
   left: 80px;
-}
-#r4_door:hover {
-  background-color: #F2F2F2;
-  opacity: 0.4;
 }
