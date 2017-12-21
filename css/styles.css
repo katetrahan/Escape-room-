@@ -46,8 +46,6 @@
   border-top: 2px solid black;
   font-weight: bold;
   font-size: 27pt;
-
-  /*font-weight: bolder;*/
 }
 
 body {
@@ -57,20 +55,12 @@ body {
   background-color:#292929;
 }
 
-/*#itemList {
-  text-align: center;
-  font-weight: 300;
-  font-size: 20px;
-  font-family: monospace;
-}*/
-
 #introText {
   padding: 15px;
   color: #292929;
   font-weight: bold;
   font-size: 30px;
 }
-
 
 #room1 {
   width: 100%;
@@ -126,9 +116,7 @@ body {
   opacity: 0.5;
 }
 
-
 .roomarea {
-  /*margin-top: 15px;*/
   border: 10px solid #52343A;
   background-color: #F2F2F2;
   margin-bottom: 20px;
@@ -162,6 +150,7 @@ body {
   left: 748px;
   z-index: 2;
 }
+
 #door:hover {
   background-color: #F2F2F2;
   opacity: .4;
@@ -203,14 +192,8 @@ body {
 }
 
 #instructionsColumn {
-  /*margin-top: -18px;*/
   font-family: sans-serif;
   font-size: 24px;
-  /*text-align: center;*/
-}
-
-#instructionsColumn li {
-  /*list-style: none;*/
 }
 
 #userReview {
@@ -287,9 +270,3 @@ blockquote footer {
 #r2_saturn:hover {
   opacity: 0.5;
 }
-
-/*#fontAlert {
-  font-size: 20px;
-  font-style: oblique;
-  font-family: sans-serif;
-}*/
