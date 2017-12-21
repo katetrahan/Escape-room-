@@ -4,10 +4,6 @@ function Items(items){
   this.items=items;
 }
 
-function Door(){
-  this.door="Door"
-}
-//function to get to level 2
 Items.prototype.checkItemsLevelOne=function(){
   if(this.items.toString().match(/(?=.*key)/)){
     document.getElementById('room1').src= "img/room1_opendoor.png";
@@ -18,31 +14,29 @@ Items.prototype.checkItemsLevelOne=function(){
     alert("It won't budge, it is locked!" )
   }
 }
-//function to get to level 3
 Items.prototype.checkItemsLevelTwo=function(){
   if(this.items.toString().match(/(?=.*book)(?=.*specs)/)){
-    // document.getElementById('room2').src= "room2/saturn.png";
-    document.getElementById("r2_saturn").onclick=function(){
       location.href = "roomthree.html";
-    }
   } else {
     alert("Can't Travel to Saturn!")
   }
 }
-
-//function to get to level (4)
 Items.prototype.checkItemsLevelThree=function(){
   if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
-    document.getElementById("bunny").onclick=function(){
-      location.href = "roomtwo.html";
-    }
+      location.href = "roomfour.html";
   } else {
-    alert("Can't Travel to Saturn!")
+    alert("Can't feed the bunny!")
+  }
+}
+Items.prototype.checkItemsLevelFour=function(){
+  if(document.getElementById('r4_circle').src= "room4/circ_12.png"){
+      location.href = "roomfive.html";
+  } else {
+    alert("Can't open the door!")
   }
 }
 
 //user interface
-//function to get to level 2
 $(document).ready(function(){
   var itemArray = [];
   $("#key1").click(function(){
@@ -52,6 +46,7 @@ $(document).ready(function(){
     console.log(itemArray);
     $("#inventory").append("<li>Key</li>");
   });
+
   var items = new Items(itemArray);
 
   $("#door").click(function(){
@@ -77,7 +72,6 @@ $(document).ready(function(){
     console.log(itemArray);
     $("#inventory").append("<li>Book</li>");
   });
-
   // $("#r2-saturn").click(function(){
   //  items.checkItemsLevelTwo();
   //  });
@@ -92,7 +86,6 @@ $(document).ready(function(){
 
   $("#r2_saturn").click(function(){
     items.checkItemsLevelTwo();
-
   });
 
 
@@ -124,22 +117,20 @@ $(document).ready(function(){
     $("#inventory").append("<li>Pineapple</li>");
   });
 
-  // $("#r2-saturn").click(function(){ // click on bunny to get out
-  //  items.checkItemsLevelThree ();
-  //  });
+  $("#bunny").click(function(){ // click on bunny to get out
+   items.checkItemsLevelThree ();
+   });
 
-//   $("#thirdLevelButton").click(function(){
-//     $("#level3Img").fadeOut();
-//
-//
-//
- });
-
-
-  // $("#thirdLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
-  //
-  // $("#fourthLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
+  var newClockPosition = 0;
+  $('#r4_circle').click(function(){
+    var clockPosition = ["room4/circ_6.png","room4/circ_9.png","room4/circ_12.png","room4/circ_3.png"];
+    document.getElementById('r4_circle').src= clockPosition[newClockPosition];
+    newClockPosition++;
+    if(newClockPosition===4){
+      newClockPosition = 0;
+    }
+  });
+  $("#r4_door").click(function(){ // click on bunny to get out
+   items.checkItemsLevelFour ();
+   });
+});

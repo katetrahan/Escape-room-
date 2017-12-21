@@ -12,3 +12,14 @@
 #room4 {
   width: 100%;
 }
+#r4_door {
+  width: 90px;
+  height: 350px;
+  position: relative;
+  top: -475px;
+  left: 80px;
+}
+#r4_door:hover {
+  background-color: #F2F2F2;
+  opacity: 0.4;
+}
