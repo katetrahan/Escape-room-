@@ -1,5 +1,6 @@
 body {
   background-color: #000000;
+  color: #fff;
 }
 .container {
     position: absolute;
@@ -43,33 +44,18 @@ body {
   /* background-color: #ff0000; */
   opacity: 0.4;
 }
-#rabbit {
-  width: 60px;
-  height: 100px;
-  top: -700px;
-  left: 220px;
+#fight {
+  width: 200px;
+  height: 25px;
+  background-color: #f2f2f2;
+  margin: auto;
+  text-align: center;
+  color: #000;
+
 }
-#saturn {
-  width: 80px;
-  height: 80px;
-  top: -390px;
-  left: 90px;
-}
-#specs {
-  width: 60px;
-  height: 15px;
-  top: -426px;
-  left: 313px;
-}
-#alien {
-  width: 60px;
-  height: 130px;
-  top: -570px;
-  left: 960px;
-}
-#key {
-  width: 60px;
-  height: 20px;
-  top: -810px;
-  left: 10px;
+
+#msg {
+  margin: auto;
+  text-align: center;
+  margin-top: 500px;
 }

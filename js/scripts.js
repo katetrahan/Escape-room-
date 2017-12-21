@@ -23,7 +23,7 @@ Items.prototype.checkItemsLevelTwo=function(){
 }
 Items.prototype.checkItemsLevelThree=function(){
   if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
-    location.href = "roomfour.html";  
+    location.href = "roomfour.html";
   } else {
     alert("Can't feed the bunny!")
   }
@@ -34,14 +34,8 @@ Items.prototype.checkItemsLevelFour=function(){
       location.href = "roomfive.html";
   } else {
     alert("Can't open the door!")
-
   }
 }
-
-//function to get to level (5)
-
-
-
 //user interface
 $(document).ready(function(){
   var itemArray = [];
@@ -67,10 +61,6 @@ $(document).ready(function(){
     alert("Sneaky snake you can't skip a level!");
   });
 
-  //function to get to level 2
-
-// $(document).ready(function(){
-//   var itemArray = [];
   $("#r2_book").click(function(){
     var book = "book"
     $("#r2_book").css("opacity", "0");
@@ -78,9 +68,6 @@ $(document).ready(function(){
     console.log(itemArray);
     $("#inventory").append("<li>Book</li>");
   });
-  // $("#r2-saturn").click(function(){
-  //  items.checkItemsLevelTwo();
-  //  });
 
   $("#r2_specs").click(function(){
     var specs = "specs"
@@ -93,7 +80,6 @@ $(document).ready(function(){
   $("#r2_saturn").click(function(){
     items.checkItemsLevelTwo();
   });
-
 
   $("#secondLevelButton").click(function(){
     $("#level2Img").fadeOut();
@@ -123,34 +109,18 @@ $(document).ready(function(){
     $("#inventory").append("<li>Pineapple</li>");
   });
 
-
-    $("#bunny").click(function(){ // click on bunny to get out
-      items.checkItemsLevelThree ();
+  $("#bunny").click(function(){ // click on bunny to get out
+    items.checkItemsLevelThree ();
   });
 
-    $("#thirdLevelButton").click(function(){
-    $("#level3Img").fadeOut();
+  $("#thirdLevelButton").click(function(){
+  $("#level3Img").fadeOut();
   });
-
-
-
-
-
-
 
   $("#fourthLevelButton").click(function(){
   $("#level4Img").fadeOut();
+  });
 
- });
-
-
-
-
-
-  //
-  // $("#fourthLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
   $("#bunny").click(function(){ // click on bunny to get out
    items.checkItemsLevelThree ();
    });
@@ -166,6 +136,5 @@ $(document).ready(function(){
   });
   $("#r4_door").click(function(){ // click on bunny to get out
    items.checkItemsLevelFour ();
-   });
+  });
 });
-

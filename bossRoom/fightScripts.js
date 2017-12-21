@@ -1,41 +1,36 @@
-var hitPoints=0;;
-var strength=0;;
+var playerHealth=100;
+var bossHealth=100;
+var strength=15;
 var name="";
-var gold=0;
 
+var throwDie=function(){
+  var die = Math.floor((Math.random() * strength ) + 1);
+  return die
+}
 
-function Actor(name, hitpoints, strength){
-  this.name = name;
-  this.hitpoints = hitpoints;
-  this.strength = strength;
-};
-
-var toString=function(){
-  return name + "hit points:" + hitPoints + " strength: " + strength;
-};
-
-var strike=function(Actor, opponent){
-  var ourThrow = throwDie();
-  var oppThrow = opponent.throwDie();
-  if(ourthrow > oppThrow){
-    $("#message").text("Good Hit!" + opponent.getName() + " loses a hit point");
-  }else{
-    $("#message").text(opponent.getName() + " ducks and is not hurt.");
+var strike=function(){
+  var playerThrow = throwDie();
+  var bossThrow = throwDie();
+  console.log(playerThrow)
+  if(playerThrow > bossThrow){
+    $("#msg").text("Good Hit!, Boss loses: " + playerThrow + "health");
+    bossHealth-=playerThrow;
+  }else if(playerThrow < bossThrow){
+    $("#msg").text( "Boss ducks and is not hurt, the boss fights back");
+    playerHealth-=bossThrow;
+  }
+  if(bossHealth<=0 && playerHealth > 0){
+    $("#msg").text( "You have beat the boss, congradulations!");
+    alert("You have beat the boss, congradulations!");
+    location.href = "win.html"
+  } else if(playerHealth<=0 && bossHealth > 0){
+    $("#msg").text( "You have died");
+    alert("You have died")
   }
 };
 
-var getName=function(){
-  return name;
-};
-
-var takeHit=function(){
-  hitPoints-=points;
-};
-
-var getHitpoints=function(){
-  return hitPoints;
-}
-
-var throwDie=function(){
-  return Math.floor((Math.random() * strength) + 1);
-}
+$(document).ready(function(){
+  $("#fight").click(function(){
+    strike();
+  });
+});

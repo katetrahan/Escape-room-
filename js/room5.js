@@ -8,8 +8,8 @@ var flashWhite = function() {
     $('.back').css("background-color","#000000")},100);
     if (itemArray.length ===  5) {
       $(".room5").fadeOut(1000);
-      setTimeout(function() { 
-        location.href = "win.html"
+      setTimeout(function() {
+        location.href = "roomsix.html"
         },1500);
     } else {
       console.log("not yet");
