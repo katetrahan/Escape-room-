@@ -37,7 +37,7 @@ Items.prototype.checkItemsLevelThree=function(){
       location.href = "roomfour.html";
     }
   } else {
-    alert("Can't Travel to Saturn!")
+    alert("You haven't discovered all the missing items!")
   }
 }
 

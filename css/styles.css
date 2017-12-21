@@ -42,6 +42,14 @@
   font-size: 27pt;
 }
 
+#line {
+  border-top: 2px solid black;
+  font-weight: bold;
+  font-size: 27pt;
+
+  /*font-weight: bolder;*/
+}
+
 body {
   padding: 20px;
   margin: 10px;
