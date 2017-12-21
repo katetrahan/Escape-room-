@@ -1,0 +1,75 @@
+body {
+  background-color: #000000;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.room6 {
+  margin: auto;
+  height: 800PX;
+  width: 1200px;
+  background-image: url('../room6/room6.png');
+}
+.dead {
+  margin: auto;
+  height: 800PX;
+  width: 1200px;
+  background-image: url('../room5/youdied.png');
+  display: none;
+}
+.win {
+  margin: auto;
+  height: 800PX;
+  width: 1200px;
+  background-image: url('../room5/youwin.png');
+}
+.intro {
+  margin: auto;
+  height: 800PX;
+  width: 1200px;
+  background-image: url('../room5/intro.png');
+  display: none;
+}
+.objects {
+  height: 0px;
+}
+.objects div {
+  display: block;
+  position: relative;
+  z-index: 1;
+  /* background-color: #ff0000; */
+  opacity: 0.4;
+}
+#rabbit {
+  width: 60px;
+  height: 100px;
+  top: -700px;
+  left: 220px;
+}
+#saturn {
+  width: 80px;
+  height: 80px;
+  top: -390px;
+  left: 90px;
+}
+#specs {
+  width: 60px;
+  height: 15px;
+  top: -426px;
+  left: 313px;
+}
+#alien {
+  width: 60px;
+  height: 130px;
+  top: -570px;
+  left: 960px;
+}
+#key {
+  width: 60px;
+  height: 20px;
+  top: -810px;
+  left: 10px;
+}
