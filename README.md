@@ -11,8 +11,11 @@ _This webpage is meant to collaborate with classmates and create a webpage using
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| captures result when item is selected | "apple graphic" | "apple graphic"
-| can return value| "hi" | "hi"|
+| a level can be activated | "start" | "level 1"|
+| level is interactive to trigger items | "item" | "book"
+| can collect items | "book, glasses" | "book, glasses"|
+| can activate a resource to move to the next level | "Level 3: next level" | "level 4"|
+| player can go back to previous levels | "selects: level 4" | "true" |
 
 
 ## Setup/Installation Requirements
