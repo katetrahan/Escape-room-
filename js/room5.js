@@ -8,7 +8,7 @@ var flashWhite = function() {
     if (itemArray.length === 6) {
       $(".room5").fadeOut(1000);
       setTimeout(function() {
-        location.href = "win.html"
+        location.href = "roomsix.html"
         },1500);
     } else {
       console.log("not yet");
