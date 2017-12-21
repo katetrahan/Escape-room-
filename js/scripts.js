@@ -23,7 +23,7 @@ Items.prototype.checkItemsLevelTwo=function(){
 }
 Items.prototype.checkItemsLevelThree=function(){
   if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
-    location.href = "roomfour.html";  
+    location.href = "roomfour.html";
   } else {
     alert("Can't feed the bunny!")
   }
@@ -167,5 +167,12 @@ $(document).ready(function(){
   $("#r4_door").click(function(){ // click on bunny to get out
    items.checkItemsLevelFour ();
    });
-});
 
+   function blinker() {
+       $("#introText").fadeOut(500).fadeIn(500);
+   }
+
+   setInterval(blinker, 1300); //Runs every second
+
+
+});
