@@ -42,6 +42,14 @@
   font-size: 27pt;
 }
 
+#line {
+  border-top: 2px solid black;
+  font-weight: bold;
+  font-size: 27pt;
+
+  /*font-weight: bolder;*/
+}
+
 body {
   padding: 20px;
   margin: 10px;
@@ -74,33 +82,49 @@ body {
 }
 
 #level1Img {
-  width: 100%;
-  height: 600px;
+  width: 980px;
+  height: 653px;
   background-color:#7D5B52;
   position: relative;
   z-index: 3;
-  top: -855px;
+  top: -889px;
   left: 0px;
   opacity: 0.5;
 }
 
 #level2Img {
-  width: 100%;
-  height: 600px;
   background-color:#7D5B52;
-
-
-  opacity: 0.5;
-}
-.levelannounce {
-  background-color: #000;
   width: 980px;
   height: 653px;
   z-index: 4;
   position: relative;
   top: -724px;
   left: 0px;
+  opacity: 0.5;
 }
+
+#level3Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -949px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+#level4Img {
+  background-color:#7D5B52;
+  width: 980px;
+  height: 653px;
+  z-index: 4;
+  position: relative;
+  top: -769px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 
 .roomarea {
   /*margin-top: 15px;*/

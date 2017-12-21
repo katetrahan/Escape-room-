@@ -23,7 +23,9 @@ Items.prototype.checkItemsLevelTwo=function(){
 }
 Items.prototype.checkItemsLevelThree=function(){
   if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
+    document.getElementById("bunny").onclick=function(){
       location.href = "roomfour.html";
+    }
   } else {
     alert("Can't feed the bunny!")
   }
@@ -33,8 +35,13 @@ Items.prototype.checkItemsLevelFour=function(){
       location.href = "roomfive.html";
   } else {
     alert("Can't open the door!")
+
   }
 }
+
+//function to get to level (5)
+
+
 
 //user interface
 $(document).ready(function(){
@@ -57,7 +64,7 @@ $(document).ready(function(){
     $("#level1Img").fadeOut();
   });
 
-  $("#skiplevel").click(function(){
+  $(".skiplevel").click(function(){
     alert("Sneaky snake you can't skip a level!");
   });
 
@@ -117,6 +124,34 @@ $(document).ready(function(){
     $("#inventory").append("<li>Pineapple</li>");
   });
 
+
+    $("#bunny").click(function(){ // click on bunny to get out
+      items.checkItemsLevelThree ();
+  });
+
+    $("#thirdLevelButton").click(function(){
+    $("#level3Img").fadeOut();
+  });
+
+
+
+
+
+
+
+  $("#fourthLevelButton").click(function(){
+  $("#level4Img").fadeOut();
+
+ });
+
+ });
+
+
+
+  //
+  // $("#fourthLevelButton").click(function(){
+  //   $("#level3Img").fadeOut();
+  // });
   $("#bunny").click(function(){ // click on bunny to get out
    items.checkItemsLevelThree ();
    });
@@ -134,3 +169,4 @@ $(document).ready(function(){
    items.checkItemsLevelFour ();
    });
 });
+
