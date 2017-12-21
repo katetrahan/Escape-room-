@@ -3,9 +3,7 @@
 function Items(items){
   this.items=items;
 }
-// function Door(){
-//   this.door="Door"
-// }
+
 Items.prototype.checkItemsLevelOne=function(){
   if(this.items.toString().match(/(?=.*key)/)){
     document.getElementById('room1').src= "img/room1_opendoor.png";
@@ -31,8 +29,8 @@ Items.prototype.checkItemsLevelThree=function(){
   }
 }
 Items.prototype.checkItemsLevelFour=function(){
-  if(this.items.toString().match(/(?=.*cactus)(?=.*pineapple)(?=.*pizza)/)){
-      location.href = "roomfour.html";
+  if(document.getElementById('r4_circle').src= "room4/circ_12.png"){
+      location.href = "roomfive.html";
   } else {
     alert("Can't open the door!")
   }
@@ -127,19 +125,8 @@ $(document).ready(function(){
     if(newClockPosition===4){
       newClockPosition = 0;
     }
-    console.log(newClockPosition)
   });
+  $("#r4_door").click(function(){ // click on bunny to get out
+   items.checkItemsLevelFour ();
+   });
 });
-
- //   $("#thirdLevelButton").click(function(){
- //     $("#level3Img").fadeOut();
- //
- //
- //
-  // $("#thirdLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
-  //
-  // $("#fourthLevelButton").click(function(){
-  //   $("#level3Img").fadeOut();
-  // });
