@@ -31,7 +31,8 @@ Items.prototype.checkItemsLevelThree=function(){
   }
 }
 Items.prototype.checkItemsLevelFour=function(){
-  if(document.getElementById('r4_circle').src= "room4/circ_12.png"){
+  var image = document.getElementById('r4_circle');
+  if(image.src.match("room4/circ_12.png")){
       location.href = "roomfive.html";
   } else {
     alert("Can't open the door!")
