@@ -35,10 +35,8 @@ Items.prototype.checkItemsLevelFour=function(){
       location.href = "roomfive.html";
   } else {
     alert("Can't open the door!")
-
   }
 }
-
 //user interface
 $(document).ready(function(){
   var itemArray = [];
@@ -63,7 +61,6 @@ $(document).ready(function(){
     alert("Sneaky snake you can't skip a level!");
   });
 
-  //function to get to level 2
   $("#r2_book").click(function(){
     var book = "book"
     $("#r2_book").css("opacity", "0");
@@ -107,18 +104,21 @@ $(document).ready(function(){
     $("#inventory").append("<li>Pineapple</li>");
   });
 
-    $("#bunny").click(function(){ // click on bunny to get out
-      items.checkItemsLevelThree ();
+  $("#bunny").click(function(){ // click on bunny to get out
+    items.checkItemsLevelThree ();
   });
 
-    $("#thirdLevelButton").click(function(){
-    $("#level3Img").fadeOut();
+  $("#thirdLevelButton").click(function(){
+  $("#level3Img").fadeOut();
   });
 
   $("#fourthLevelButton").click(function(){
   $("#level4Img").fadeOut();
+  });
 
- });
+  $("#bunny").click(function(){ // click on bunny to get out
+   items.checkItemsLevelThree ();
+   });
 
   var newClockPosition = 0;
     $('#r4_circle').click(function(){
