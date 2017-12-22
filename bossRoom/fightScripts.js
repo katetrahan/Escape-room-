@@ -18,6 +18,7 @@ var strike=function(){
   }else if(playerThrow < bossThrow){
     $("#msg").text( "Boss ducks and is not hurt, the boss fights back");
     playerHealth-=bossThrow;
+
     $('.progress-bar').css("width", playerHealth + "%");
   }
   if(bossHealth<=0 && playerHealth > 0){
