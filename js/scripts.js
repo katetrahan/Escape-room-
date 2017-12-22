@@ -106,6 +106,7 @@ $(document).ready(function(){
 
   $("#bunny").click(function(){ // click on bunny to get out
     items.checkItemsLevelThree ();
+  });
 
   $("#thirdLevelButton").click(function(){
   $("#level3Img").fadeOut();

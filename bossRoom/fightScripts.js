@@ -18,10 +18,11 @@ var strike=function(){
   }else if(playerThrow < bossThrow){
     $("#msg").text( "Boss ducks and is not hurt, the boss fights back");
     playerHealth-=bossThrow;
+
+    $('.progress-bar').css("width", playerHealth + "%");
   }
   if(bossHealth<=0 && playerHealth > 0){
     $("#msg").text( "You have beat the boss, congradulations!");
-    alert("You have beat the boss, congradulations!");
     location.href = "win.html"
   } else if(playerHealth<=0 && bossHealth > 0){
     $("#msg").text( "You have died");
